@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import bootstrap full CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Pomodoro Clock</title>
+
+</head>
+<body onload="startTime()">
+  <div class="container-fluid">
+    <h1 id="heading" class="text-center">Pomodoro Clock</h1>
+    <div id="clock"></div> 
+    <p>Current Time</p>
+    <br><br>
+    <!-- <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="stime">Session Time</label>
+            <select class="custom-select" id="stime">
+                <option value="25">25</option>
+                <option value="45">45</option>
+                <option value="60">60</option>
+               
+            </select>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="btime">Break Time</label>
+            <select class="custom-select" id="btime">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                   
+                </select>
+        </div>
+    </div> -->
+    <div class ="row">
+      <div class="col col-xs-3">
+        <div class="input-group mb-3" >
+          <div class="input-group-prepend">
+              <label class="input-group-text" for="stime">Session Time</label>
+              <select class="custom-select" id="stime">
+                  <option value="25">25</option>
+                  <option value="45">45</option>
+                  <option value="60">60</option>
+                 
+              </select>
+          </div>
+      </div>
+      <div class="input-group mb-3" >
+          <div class="input-group-prepend">
+              <label class="input-group-text" for="btime">Break Time</label>
+              <select class="custom-select" id="btime">
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                     
+                  </select>
+          </div>
+      </div>
+      </div> 
+        
+        <div id="timerBox" class="col col-xs-6 text-center rounded-circle">
+        
+        </div>
+        <div class="col col-xs-3"></div>
+    </div>
+    <br><br><br>
+    <div class ="row">
+        <div class="col col-xs-2"></div>
+        <div class="col col-xs-8">
+          <button id="start" class="btn btn-lg px-5"><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Start</button>
+          <button id="pause" class="btn btn-lg px-5">Pause</button>
+          <button id="clear" class="btn btn-lg px-5">Clear</button>
+        </div>
+        <div class="col col-xs-2"></div>
+    </div>
+
+
+
+
+  </div>
+  <audio id= "beep">
+    <source  src="Chord_1.mp3" type="audio/mp3">
+  </audio>
+    <!-- import jquery -->
+    <script type ="text/javascript" src="js/jquery.js"></script>
+    <!-- import bootstrap scripts -->
+    <script src="js/bootstrap.bundle.js"></script>
+      <!-- import D3.js -->
+    <script type="text/javascript" src="js/d3.js"></script>
+    <script type="text/javascript" src="script.js"></script> 
+</body>
+</html>

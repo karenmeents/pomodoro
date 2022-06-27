@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 600%;
+  font-family: Fantasy;
+}
+
+#clock {
+  font-size: 30px;
+}
+
+.box {
+  width: 15%;
+  color: white;
+}
+
+#timerBox {
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  border-width: 10px;
+  font-weight: bold;
+  font-family: Fantasy;
+  font-size: 100px;
+  margin-top: -85px;
+ 
+
+
+}
+.btn {
+  background-color: white;
+  color: black;
+}
+
+
+/*# sourceMappingURL=style.css.map */
